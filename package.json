@@ -1,7 +1,8 @@
 {
   "name": "generate-sass-from-html-jsx",
+  "publisher": "Generate-JSX-HTML-to-BEM-SCSS",
   "displayName": "generate-sass-from-html-jsx",
-  "description": "",
+  "description": "generate-sass-from-html-jsx",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.91.0"
@@ -15,7 +16,7 @@
     "commands": [
       {
         "command": "generate-sass-from-html-jsx.copySass",
-        "title": "Copy Sass content"
+        "title": "Copy SASS content"
       }
     ]
   },

@@ -1,71 +1,36 @@
-# generate-sass-from-html-jsx README
+# Generate SCSS from HTML/JSX
 
-This is the README for your extension "generate-sass-from-html-jsx". After writing up a brief description, we recommend including the following sections.
+## Overview
+
+The **Generate SCSS from HTML/JSX** VS Code extension provides functionality to automatically generate SCSS styles based on class names found in your HTML or JSX code. This extension helps streamline the process of creating SCSS structures by extracting class names and converting them into a hierarchical SCSS format.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Extract Class Names**: Parses the selected text in your editor to find class names following the BEM (Block, Element, Modifier) naming convention.
+- **Generate SCSS**: Converts the extracted class names into SCSS syntax based on the hierarchical structure.
+- **Copy to Clipboard**: Automatically copies the generated SCSS code to your clipboard for easy pasting into your stylesheets.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for `generate-sass-from-html-jsx`.
+4. Click `Install` to install the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Alternatively, you can install the extension directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Generate-JSX-HTML-to-BEM-SCSS.generate-sass-from-html-jsx).
 
-## Requirements
+## Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. **Open your HTML or JSX file** in VS Code.
+2. **Select the text** containing the class names you want to convert to SCSS.
+3. **Execute the Command**:
+   - Open the Command Palette by pressing `Ctrl+Shift+P` or `Command+Shift+P`.
+   - Search for and select `Copy SASS content`.
 
-## Extension Settings
+The SCSS code will be generated based on the selected text and copied to your clipboard. You will see a notification confirming that the Sass content has been copied.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Source code
+[https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM/blob/main/src/extension.ts](https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM/blob/main/src/extension.ts)
 
-For example:
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
