@@ -14,7 +14,7 @@ The **Generate SCSS from HTML/JSX** VS Code extension provides functionality to 
 
 1. Open VS Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
-3. Search for `generate-sass-from-html-jsx`.
+3. Search for `generate-jsx-html-to-bem-scss`.
 4. Click `Install` to install the extension.
 
 Alternatively, you can install the extension directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Generate-JSX-HTML-to-BEM-SCSS.generate-sass-from-html-jsx).

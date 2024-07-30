@@ -33,7 +33,7 @@ function splitClassNameByBEMRule(classString: string) {
   return [block[0], element?.[0] || null, modify?.[0] || null];
 }
 
-function extractScss(classNames: string[]) {
+function extractSCSS(classNames: string[]) {
   const SASSObject: ISASSObject = {};
 
   for (const className of classNames) {
@@ -53,6 +53,7 @@ function extractScss(classNames: string[]) {
     }
 
     if (element) {
+      const alreadyBlock = SASSObject[block];
       const alreadyElement = alreadyBlock.children.find(
         (child) => child.parent === element
       );
@@ -65,6 +66,7 @@ function extractScss(classNames: string[]) {
       }
     }
     if (modify) {
+      const alreadyBlock = SASSObject[block];
       if (element) {
         const alreadyElement = alreadyBlock.children.find(
           (child) => child.parent === element
@@ -81,7 +83,7 @@ function extractScss(classNames: string[]) {
       }
     }
   }
-  console.log("SASSObject", SASSObject);
+
   return SASSObject;
 }
 
@@ -105,7 +107,8 @@ function parseToSCSS(obj: SASSObjectItem, parentSelector = "") {
   return scss;
 }
 
-const generateScss = (sassObject: ISASSObject) => {
+const generateSCSS = (sassObject: ISASSObject) => {
+  console.log("sassObject", sassObject);
   let result = "";
   for (const block of Object.values(sassObject)) {
     result += parseToSCSS(block);
@@ -136,8 +139,8 @@ export function activate(context: vscode.ExtensionContext) {
         const selectedText = document.getText(selection);
 
         const classNames = getAllClassName(selectedText);
-        const scssObject = extractScss(classNames);
-        vscode.env.clipboard.writeText(generateScss(scssObject));
+        const scssObject = extractSCSS(classNames);
+        vscode.env.clipboard.writeText(generateSCSS(scssObject));
         vscode.window.showInformationMessage("Sass content copied");
       }
     }
