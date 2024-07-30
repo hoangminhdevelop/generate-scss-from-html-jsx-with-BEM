@@ -3,6 +3,7 @@
   "publisher": "Generate-JSX-HTML-to-BEM-SCSS",
   "displayName": "generate-sass-from-html-jsx",
   "description": "generate-sass-from-html-jsx",
+  "icon": "images/logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.91.0"
