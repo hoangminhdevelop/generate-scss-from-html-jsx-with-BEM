@@ -1,7 +1,7 @@
 {
   "name": "generate-sass-from-html-jsx",
   "displayName": "generate-sass-from-html-jsx",
-  "description": "hahahaahahahahah",
+  "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.91.0"
