@@ -1,10 +1,10 @@
 {
   "name": "generate-sass-from-html-jsx",
   "publisher": "Generate-JSX-HTML-to-BEM-SCSS",
-  "displayName": "generate-sass-from-html-jsx",
-  "description": "generate-sass-from-html-jsx",
+  "displayName": "HTML & JSX to BEM SCSS Converter",
+  "description": "Extract BEM classes from HTML/JSX and automatically generate well-structured SCSS files. This extension parses your markup, identifies BEM patterns, and creates nested SCSS with proper selector hierarchy. Save time writing stylesheets while maintaining clean BEM methodology.",
   "icon": "images/logo.png",
-  "version": "0.0.3",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.91.0"
   },

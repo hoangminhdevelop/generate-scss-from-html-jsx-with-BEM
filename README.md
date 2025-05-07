@@ -13,11 +13,11 @@ The **Generate SCSS from HTML/JSX** VS Code extension provides functionality to 
 ## Installation
 
 1. Open VS Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side ofcd the window or by pressing `Ctrl+Shift+X`.
 3. Search for `generate-jsx-html-to-bem-scss`.
 4. Click `Install` to install the extension.
 
-Alternatively, you can install the extension directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Generate-JSX-HTML-to-BEM-SCSS.generate-sass-from-html-jsx).
+Alternatively, you can install the extension directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Generate-JSX-HTML-to-BEM-SCSS.html-jsx-to-bem-scss-converter).
 
 ## Usage
 
@@ -29,8 +29,10 @@ Alternatively, you can install the extension directly from the [Visual Studio Ma
 
 The SCSS code will be generated based on the selected text and copied to your clipboard. You will see a notification confirming that the Sass content has been copied.
 
+
 ## Source code
-[https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM/blob/main/src/extension.ts](https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM/blob/main/src/extension.ts)
+For any feedback, suggestions, or issues, please feel free to open an issue or contribute directly to the repository at:
+[https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM](https://github.com/hoangminhdevelop/generate-scss-from-html-jsx-with-BEM/blob/main/src/extension.ts)
 
 
 
